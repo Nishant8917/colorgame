@@ -100,6 +100,12 @@ timeLabel = tkinter.Label(root, text = "Time left: " +
               str(timeleft), font = ('Helvetica', 12))
                 
 timeLabel.pack()
+
+start_button = Button(btn_frame, text = "Start", width = 20, fg = "black", bg = "pink", bd = 0,padx = 20, pady = 10 , command = startGame)
+start_button.grid(row=0, column= 0)
+
+reset_button = Button(btn_frame, text = "Reset", width = 20, fg = "black", bg = "light blue", bd = 0,padx = 20, pady = 10 , command = resetGame)
+reset_button.grid(row=0, column= 1)
   
 # add a label for displaying the colours
 label = tkinter.Label(root, font = ('Helvetica', 60))
